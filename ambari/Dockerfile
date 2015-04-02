@@ -8,8 +8,7 @@ USER root
 RUN yum clean all
 
 # ambari
-RUN cd /etc/yum.repos.d && curl --silent -O http://birepo-build.svl.ibm.com/repos/Ambari/RHEL6/x86_64/1.7/GMC/ambari.repo > ambari.repo
-#ADD etc/yum.repos.d/ambari.repo /etc/yum.repos.d/ambari.repo
+ADD etc/yum.repos.d/ambari.repo /etc/yum.repos.d/ambari.repo
 
 # ambari server setup
 RUN yum -y install ambari-server
