@@ -1,0 +1,6 @@
+[BI_AMBARI-1.7-20150327_2315]
+name=ambari-1.7-20150327_2315
+baseurl=http://ibm-open-platform.ibm.com/repos/Ambari/RHEL6/x86_64/1.7
+enabled=1
+gpgcheck=1
+gpgkey=http://ibm-open-platform.ibm.com/repos/Ambari/RHEL6/x86_64/1.7/BI-GPG-KEY.public

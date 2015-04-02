@@ -1,0 +1,14 @@
+{
+    "blueprint": "iop",
+    "default_password": "passw0rd",
+    "host_groups": [
+        {
+            "name": "master_group_1",
+            "hosts": [
+                {
+                    "fqdn": "ambari.luck.com"
+                }
+            ]
+        }
+    ]
+}

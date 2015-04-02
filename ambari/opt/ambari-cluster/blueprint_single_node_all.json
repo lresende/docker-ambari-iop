@@ -1,0 +1,49 @@
+{ "host_groups" : [
+    { "name" : "master_group_1",
+      "components" : [
+        { "name" : "ZOOKEEPER_SERVER" },
+        { "name" : "ZOOKEEPER_CLIENT" },
+        { "name" : "OOZIE_CLIENT" },
+        { "name" : "OOZIE_SERVER" },
+        { "name" : "HBASE_CLIENT" },
+        { "name" : "HBASE_MASTER" },
+        { "name" : "HBASE_REGIONSERVER" },
+        { "name" : "KNOX_GATEWAY" },
+        { "name" : "NAMENODE" },
+        { "name" : "SECONDARY_NAMENODE" },
+        { "name" : "RESOURCEMANAGER" },
+        { "name" : "NODEMANAGER" },
+        { "name" : "DATANODE" },
+        { "name" : "YARN_CLIENT" },
+        { "name" : "APP_TIMELINE_SERVER" },
+        { "name" : "MAPREDUCE2_CLIENT" },
+        { "name" : "HISTORYSERVER" }, 
+        { "name" : "HDFS_CLIENT" },
+        { "name" : "SLIDER" },
+        { "name" : "PIG" },
+        { "name" : "SQOOP" },
+        { "name" : "FLUME_HANDLER" },
+        { "name" : "HCAT" },
+        { "name" : "WEBHCAT_SERVER" },
+        { "name" : "HIVE_CLIENT" },
+        { "name" : "HIVE_SERVER" },
+        { "name" : "HIVE_METASTORE" },
+        { "name" : "MYSQL_SERVER" },
+        { "name" : "SPARK_CLIENT" },
+        { "name" : "SPARK_THRIFTSERVER" },
+        { "name" : "SPARK_JOBHISTORYSERVER" }, 
+        { "name" : "NAGIOS_SERVER" },
+        { "name" : "GANGLIA_SERVER" },
+        { "name" : "GANGLIA_MONITOR" }],
+      "cardinality" : "1" } ],
+  "configurations": [
+    {
+      "nagios-env": {
+        "nagios_contact": "admin@localhost.com"
+      }
+    }
+  ],
+  "Blueprints" : {
+    "blueprint_name" : "iop",
+    "stack_name" : "BigInsights",
+    "stack_version" : "4.0" } }
