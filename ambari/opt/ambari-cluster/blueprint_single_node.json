@@ -35,8 +35,31 @@
       "cardinality" : "1" } ],
   "configurations": [
     {
-      "nagios-env": {
-        "nagios_contact": "admin@localhost.com"
+      "cluster-env" : {
+        "security_enabled" : "false",
+        "smokeuser" : "ambari-qa",
+        "user_group" : "hadoop"
+      }
+    },
+    {
+      "nagios-env" : {
+        "nagios_contact": "admin@localhost.com",
+        "nagios_web_password": "passw0rd"
+      }
+    },
+    {
+      "oozie-site" : {
+         "oozie.service.JPAService.jdbc.password": "passw0rd"
+      }
+    },
+    {
+      "hive-site" : {
+         "javax.jdo.option.ConnectionPassword": "passw0rd"
+      }
+    },
+    {
+      "knox-env" : {
+        "knox_master_secret" : "passw0rd"
       }
     }
   ],
